@@ -45,5 +45,5 @@ header{
     }
 
     .navBar a:hover{
-        @include navigation_bar_hover_attribute()
+        @include navigation_bar_hover_attribute($text_color, $theme_color)
     }
