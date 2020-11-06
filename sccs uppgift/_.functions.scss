@@ -1,0 +1,56 @@
+@import "./_variables";
+
+
+@mixin header_attributes($theme_color, $text_color, $main_font){
+    background-color: $theme_color;
+    height: 10vh;
+    width: $standard_width;
+    color: $text_color;
+    font-size: $main_font;
+}  
+@mixin h1_attributes {
+    margin-top: 100px;
+    
+}
+
+@mixin navigation_bar($theme_color, $text_color){
+    float: right;
+    color: $text_color;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    background-color: $theme_color;
+    overflow: hidden;
+    display: inline;
+    margin-top: -30px;
+
+}
+
+@mixin navigation_bar_hover_attribute(){
+    background-color: #ddd;
+    color: black;
+    border-radius: 20px;
+
+}
+
+@mixin parallax_function($header_Picture) {
+    background-image: $header_Picture;
+    height: 80vh;
+    width: $standard_width;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    color: orange;
+}
+
+@mixin text_attributes($theme_color, $text_color) {
+    color: $text_color ;
+    background-color: $theme_color;
+    text-align: center;
+    height: 250px;
+    
+
+}
